@@ -1,0 +1,30 @@
+Task 1:Python Program to Find the Largest Number in a List
+
+lst = [35, 10, 68, 15, 99, 25, 47, 83]
+lst_new = 0
+for l in lst:
+    if l > lst_new:
+        lst_new = l
+print(lst_new)
+
+Task 2:Python Program to Find the Second Largest Number in a List
+
+lst = [35, 10, 68, 15, 99, 25, 47, 83]
+lst.sort()
+print(lst[-2])
+
+Task 3:Python Program to Merge Two Lists and Sort it
+
+lst1 = [35, 10, 68, 15, 99, 25, 47, 83]
+lst2 = [75, 52, 85, 96, 52, 24, 66, 71]
+lst = lst1 + lst2
+lst.sort()
+print("Sorted list:\n", lst)
+
+Task 4:Python Program to Swap the First and Last Value of a List
+
+lst = [35, 10, 68, 15, 99, 25, 47, 83]
+print("Swap first and last element of list")
+print("List before swaping:\n", lst)
+lst[-1], lst[0] = lst[0], lst[-1]
+print("List after swaping:\n", lst)
